@@ -13,7 +13,7 @@ export default function Header() {
       backdrop-blur-[0.05rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
       initial ={{ y: -100, x: "-50%", opacity:0 }}
       animate = {{ y: 0, x: "-50%", opacity:1 }}
-      transition={{ duration: 0.3, delay: 0.2, type: "spring", stiffness: 100 }}
+      // transition={{ duration: 0.1, type: "spring", stiffness: 100 }}
       ></motion.div>
 
       <nav className = "flex fixed top-[0.25rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
@@ -23,7 +23,7 @@ export default function Header() {
             <motion.li className=" h-3/4 flex items-center justify-center" key = {link.hash}
               initial = {{ opacity: 0, y: -100 }}
               animate = {{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.2, type: "spring", stiffness: 100 }}
+              // transition={{ duration: 0.1, type: "spring", stiffness: 100 }}
             >
               <Link className='flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950' href={link.hash}>
                 {
